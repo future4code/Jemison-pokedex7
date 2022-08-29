@@ -2,7 +2,7 @@
 
 Nome dos integrantes: 
 - Ricardo Veronezi Ferrão
-- Pessoa 2
+- Gabriel Marcelino Carvalho
 - Pessoa 3
 
 Link do Surge: www.link.com.br
