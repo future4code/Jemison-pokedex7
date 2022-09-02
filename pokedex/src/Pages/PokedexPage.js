@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { goToHomePage } from "../routes/coordinator";
 import {useNavigate} from 'react-router-dom'
 
@@ -15,11 +15,11 @@ export function PokedexPage() {
           justifyContent='center'
           margin='14'
         >
+          <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png'/>          
           <Text>Pokedex Page</Text>
           <Button onClick={() => goToHomePage(navigate)}>Voltar</Button>
         </Flex>
       </Box>
     );
   }
-  
   
