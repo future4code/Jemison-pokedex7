@@ -21,8 +21,8 @@ export function HomePage() {
           
           
           <Flex alignItems='center'>
-            <Button margin="15px" onClick={() => goToPokedexPage(navigate)}>Pokedex Page</Button>
-            <Button onClick={() => goToDetailsPage(navigate)}>DetailsPage</Button>
+            <Button margin="15px" boxShadow="dark-lg" onClick={() => goToPokedexPage(navigate)}>Pokedex Page</Button>
+            <Button boxShadow="dark-lg" onClick={() => goToDetailsPage(navigate)}>DetailsPage</Button>
           </Flex>
         </Flex> 
         <PokemonCard/>
