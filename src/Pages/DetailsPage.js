@@ -14,7 +14,7 @@ export function DetailsPage() {
           flexDirection='column'
           justifyContent='center'
           margin='14'
-          >
+        >
           <Text>Details Page</Text>
 
           <Button margin="15px" onClick={() => goToHomePage(navigate)}>Pokedex Page</Button>
