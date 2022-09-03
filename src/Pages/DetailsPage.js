@@ -4,8 +4,10 @@ import { goToHomePage } from "../routes/coordinator";
 
 
 
-export function DetailsPage() {
+export function DetailsPage({id, }) {
     const navigate = useNavigate();
+
+    
 
     return (
       <Box>
@@ -16,6 +18,9 @@ export function DetailsPage() {
           margin='14'
         >
           <Text>Details Page</Text>
+          <Flex>
+
+          </Flex>
 
           <Button margin="15px" boxShadow="dark-lg" onClick={() => goToHomePage(navigate)}>Pokedex Page</Button>
           

@@ -9,14 +9,15 @@ export const PokemonCard = () => {
     
     const [pokemon, setPokemon] = useState([])
 
-   useEffect(() => {
-    getPokemons();
-   }, [])
+    useEffect(() => {
+      getPokemons();
+    }, [])
        
 
     const getPokemons = () => {
       let endpoints = []
       for (let i = 1; i < 20; i++){
+      
         endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`)
       }
       
@@ -24,20 +25,34 @@ export const PokemonCard = () => {
 
     }
 
+
     
     return (
       <Flex direction='column'>
           <Flex
-            direction='column' // teste 
+            direction='column'
             bg='blue.300'
             
             >
-           {pokemon.map((poke, index) => {
+           {pokemon.map((poke) => {
             return (
-                  <Box>
-                    <Text>{poke.data.name}</Text>
-                    <Image src={poke.data.sprites.front_default} />
-                  </Box>  
+                  
+                  <Flex key={poke.data.id} justifyContent='flex-start' flexWrap='wrap' direction='row'>
+                    
+                    <Flex justify='center' align='center' direction='column' w='200px'>
+                      <Image src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.data.id}.png`} />
+                      <Text>{poke.data.name}</Text>
+                      
+                    </Flex>
+                    <Flex justify='center'>
+                      
+                      <Button fontSize='8px' w='50px' h='30px' margin='15px'>
+                        Detalhes
+                      </Button> 
+                     
+                      <Button fontSize='8px' w='auto' h='30px'margin='15px'>Adicionar a Pokédex</Button>
+                    </Flex>
+                  </Flex>  
                 )
           })}
           </Flex>
