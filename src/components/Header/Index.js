@@ -5,10 +5,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 
 
-export default function Navbar() {
+export default function Header() {
   return (
     <Box sx={{ flexGrow: 1, marginBottom:"3em" }}>
-      <AppBar position="static"  sx={{ backgroundColor: "black" }}>
+      <AppBar position="static"  sx={{ backgroundColor: "chocolate" }}>
         <Toolbar>
           <Box display="flex" justifiContent="space-between" width="100%">
             <Box component="img" src="/assets/pokemon-logo.png" height="3em" />
