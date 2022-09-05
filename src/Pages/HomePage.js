@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react'
 import Headers from '../components/Header/Index'
 import PokemonCard from '../components/PokemonCard/index'
 
-export const Home = () => {
+export const HomePage = () => {
     const [pokemons, setPokemons] = useState([])
 
     useEffect(() => {

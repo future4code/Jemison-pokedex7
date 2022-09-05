@@ -1,6 +1,7 @@
-import { Button, Text, Flex, Box, Grid, GridItem } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import { goToHomePage } from "../routes/coordinator";
+import { goToHomePage } from "../router/coordinator";
+import { Button } from "@mui/material";
+
 
 
 
@@ -10,6 +11,23 @@ export function DetailsPage({id, }) {
     
 
     return (
+      <div>
+        <Button 
+          variant="contained" 
+          onClick={() => goToHomePage(navigate)}>
+          Pokedex Page
+        </Button>
+
+      </div>
+
+
+
+
+
+
+
+
+      /*
       <Box>
          <Flex
           alignItems='center'
@@ -83,7 +101,7 @@ export function DetailsPage({id, }) {
 
 
         
-      </Box>
+      </Box>*/
     );
   }
   

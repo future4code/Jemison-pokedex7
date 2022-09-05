@@ -5,8 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { goToDetailsPage } from '../../router/coordinator';
+import { useNavigate } from 'react-router-dom';
 
 export default function PokemonCard({name, image}) {
+  const navigate = useNavigate();
   
   return (
     <Card sx={{ maxWidth: 345, margin:"1em", align:"center" }}>
@@ -28,7 +31,7 @@ export default function PokemonCard({name, image}) {
       </CardContent>
       <CardActions>
         <Button size="small">Remover</Button>
-        <Button size="small">Ver Detalhes</Button>
+        <Button size="small" onClick={() => goToDetailsPage(navigate)}>Ver Detalhes</Button>
       </CardActions>
     </Card>
   );
