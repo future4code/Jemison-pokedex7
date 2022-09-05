@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
-import { goToHomePage } from "../routes/coordinator";
+import { goToHomePage } from "../router/coordinator";
 import {useNavigate} from 'react-router-dom'
 
 
