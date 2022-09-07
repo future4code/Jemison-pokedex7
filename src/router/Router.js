@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { PokedexPage } from '../Pages/PokedexPage';
-import { DetailsPage } from '../Pages/DetailsPage';
-import {HomePage} from '../Pages/HomePage'
+import { PokedexPage } from '../Pages/PokedexPage/PokedexPage';
+import { DetailsPage } from '../Pages/DetailsPage/DetailsPage';
+import {HomePage} from '../Pages/HomePage/HomePage'
 
 
 export function Router() {
