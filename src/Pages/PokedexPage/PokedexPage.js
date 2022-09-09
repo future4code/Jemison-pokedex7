@@ -11,8 +11,9 @@ export function PokedexPage() {
       <div>
         <button onClick={() => goToHomePage(navigate)}>Voltar</button>
 
-
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png'/>          
+          <br></br>
+          <img src='https://img1.gratispng.com/20171220/kqw/pokeball-png-5a3a4a7e247ce7.9167778215137695981495.jpg'/>          
+          <br></br>
           Pokedex Page
           <br></br>
           
