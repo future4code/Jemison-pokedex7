@@ -9,7 +9,7 @@ import { goToDetailsPage } from '../../router/coordinator';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup } from '@mui/material';
 
-export default function PokemonCard({name, image}) {
+export default function PokemonCard({name, image, id}) {
   const navigate = useNavigate();
   
   return (
@@ -38,7 +38,7 @@ export default function PokemonCard({name, image}) {
         
       > 
         <Button size="small"><h6>Remover</h6></Button>
-        <Button size="small" onClick={() => goToDetailsPage(navigate)}><h6>Ver Detalhes</h6></Button>
+        <Button size="small" onClick={() => goToDetailsPage(navigate, id)}><h6>Ver Detalhes</h6></Button>
       </ButtonGroup>
     </Card>
   );

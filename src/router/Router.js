@@ -12,7 +12,7 @@ export function Router() {
                 <Route index element={ <HomePage />}/>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/PokedexPage" element={<PokedexPage />}/>
-                <Route path="/PokedexPage/DetailsPage" element={<DetailsPage />}/>
+                <Route path="DetailsPage/:id" element={<DetailsPage />}/>
 
             </Routes>
         </BrowserRouter>
