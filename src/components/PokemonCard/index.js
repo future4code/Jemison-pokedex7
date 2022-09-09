@@ -8,7 +8,8 @@ import Typography from '@mui/material/Typography';
 import { goToDetailsPage } from '../../router/coordinator';
 import { useNavigate } from 'react-router-dom';
 
-export default function PokemonCard({name, image}) {
+export default function PokemonCard({name, image, addToPokedex,pokemonAdicionado}) {
+ 
   const navigate = useNavigate();
   
   return (
@@ -30,8 +31,9 @@ export default function PokemonCard({name, image}) {
 
       </CardContent>
       <CardActions>
-        <Button size="small">Remover</Button>
+     
         <Button size="small" onClick={() => goToDetailsPage(navigate)}>Ver Detalhes</Button>
+        <Button size="small" onClick={()=>addToPokedex(pokemonAdicionado)}> Adicionar </Button>
       </CardActions>
     </Card>
   );

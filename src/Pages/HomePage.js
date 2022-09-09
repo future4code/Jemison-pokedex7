@@ -3,9 +3,18 @@ import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 import Headers from '../components/Header/Index'
 import PokemonCard from '../components/PokemonCard/index'
+import { useRequestData } from '../hooks/useRequestData'
 
 export const HomePage = () => {
-    const [pokemons, setPokemons] = useState([])
+   
+
+    const addToPokedex=(pokemonAdiciondo)=>{
+        console.log(pokemonAdiciondo)
+    }
+    
+
+    
+     const [pokemons, setPokemons] = useState([])
 
     useEffect(() => {
         getPokemons()
@@ -29,14 +38,18 @@ export const HomePage = () => {
 
     return (
         <div>
+            
             <Headers/>
             <Container maxWidth="xl">
                 <Grid container spacing={0.2}>
-                    {pokemons.map((pokemon, key) =>
-                        <Grid item xs={3} key={key}>
+                     {pokemons && pokemons.map((pokemon) => 
+                        <Grid item xs={3} key={pokemon.id} pokemon={pokemon}  >
                             <PokemonCard 
-                                name={pokemon.data.name} 
-                                image={pokemon.data.sprites.front_default} 
+                                id={pokemon.id}
+                                 name={pokemon.data.name} 
+                                 image={pokemon.data.sprites.front_default} 
+                                addToPokedex={addToPokedex}
+                                pokemonAdicionado={pokemon}
                             />  
                         </Grid>)
                     }
