@@ -19,7 +19,7 @@ Nome dos integrantes:
 **Link do Surge:** 
 http://laughable-dust.surge.sh/
 
-**Tecnoligias utilizadas:**
+**Tecnologias utilizadas:**
 ReactJS 
 HTML
 Material-UI
