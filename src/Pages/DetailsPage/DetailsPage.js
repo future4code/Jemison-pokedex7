@@ -4,6 +4,7 @@ import { goToHomePage } from "../../router/coordinator";
 import { Button, Container } from '@mui/material';
 import Box from '@mui/material/Box'
 import { useRequestData } from '../../hooks/useRequestData';
+import styled from './styled.css'
 
 
 export function DetailsPage() {
@@ -15,6 +16,13 @@ export function DetailsPage() {
       console.log(data)
       return (
         <Container >
+          <div class="parent">
+            
+    <div Class="div1"> FOTO FRENTE </div>
+    <div class="div2"> FOTO DE COSTAS</div>
+    
+    
+    <div class="div3">
           <h2>Abilities</h2>
           <div>
             {data.abilities?.map(({ability: {name}}, key) => { //habilidades
@@ -38,6 +46,9 @@ export function DetailsPage() {
               )
             })}
           </div>
+          </div>
+          <div class="div4">
+
           <h2>Base Status</h2>
           <div>
             {data.stats?.map((stat) => { //status do pokemon
@@ -47,6 +58,8 @@ export function DetailsPage() {
                 </>
               )
             })}
+            </div>
+          </div>
           </div>
 
           <Box display="flex" justifyContent="flex-end">
