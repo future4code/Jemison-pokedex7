@@ -30,4 +30,5 @@ useEffect
 useParams
 Axios
 
+OBS.: Em função de problemas na *branch* do Gabriel e por termos feito os *códigos juntos*, a maior parte dos commits foi feito por mim (pokedex-rvf)
 
