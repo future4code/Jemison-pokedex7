@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-//import CardActions from '@mui/material/CardActions';
+import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
@@ -9,7 +9,10 @@ import { goToDetailsPage } from '../../router/coordinator';
 import { useNavigate } from 'react-router-dom';
 import { ButtonGroup } from '@mui/material';
 
-export default function PokemonCard({name, image, id}) {
+
+export default function PokemonCard({name, image, addToPokedex,pokemonAdicionado}) {
+ 
+
   const navigate = useNavigate();
   
   return (
@@ -31,6 +34,12 @@ export default function PokemonCard({name, image, id}) {
         </Typography>
 
       </CardContent>
+      <CardActions>
+     
+        <Button size="small" onClick={() => goToDetailsPage(navigate)}>Ver Detalhes</Button>
+        <Button size="small" onClick={()=>addToPokedex(pokemonAdicionado)}> Adicionar </Button>
+      </CardActions>
+
       <ButtonGroup Box sx={{ height:'50%' }}
         disableElevation
         aria-label="Disabled elevation buttons"
@@ -38,8 +47,10 @@ export default function PokemonCard({name, image, id}) {
         
       > 
         <Button size="small"><h6>Remover</h6></Button>
+
         <Button size="small" onClick={() => goToDetailsPage(navigate, id)}><h6>Ver Detalhes</h6></Button>
       </ButtonGroup>
+
     </Card>
   );
 }
