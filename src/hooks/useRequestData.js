@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 export function useRequestData(url) {
-    const [data, setData] = useState(undefined)
+    const [data, setData] = useState([])
 
     useEffect(() =>{
         axios.get(url)
@@ -13,7 +13,7 @@ export function useRequestData(url) {
            console.log(error)
         })}, [url])
         
-        return [data]
+        return {data}
 }    
 
 
