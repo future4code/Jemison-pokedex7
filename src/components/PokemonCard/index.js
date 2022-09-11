@@ -16,7 +16,8 @@ export default function PokemonCard({name, image, id}) {
     <Card sx={{ maxWidth: 500, margin:"1em", align:"center" }}>
       <CardMedia
         component="img"
-        height="150"
+        width="100%"
+        height="200px"
         align="center"
         image={image}
         alt={name}
@@ -31,13 +32,13 @@ export default function PokemonCard({name, image, id}) {
         </Typography>
 
       </CardContent>
-      <ButtonGroup Box sx={{ height:'50%' }}
+      <ButtonGroup Box sx={{ display: 'flex', height:'100%', width: '100%', justifyContent: 'center', margin: '10px'}}
         disableElevation
         aria-label="Disabled elevation buttons"
         aling="center"
         
       > 
-        <Button size="small"><h6>Remover</h6></Button>
+        <Button size="small" ><h6>Remover</h6></Button>
         <Button size="small" onClick={() => goToDetailsPage(navigate, id)}><h6>Ver Detalhes</h6></Button>
       </ButtonGroup>
     </Card>
