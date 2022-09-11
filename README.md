@@ -17,7 +17,7 @@ Nome dos integrantes:
 - Ricardo Ferrão
 
 **Link do Surge:** 
-http://gruesome-nest.surge.sh/
+https://foamy-fear.surge.sh/
 
 **Tecnologias utilizadas:**
 ReactJS 
