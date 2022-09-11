@@ -17,7 +17,7 @@ Nome dos integrantes:
 - Ricardo Ferrão
 
 **Link do Surge:** 
-http://laughable-dust.surge.sh/
+http://gruesome-nest.surge.sh/
 
 **Tecnologias utilizadas:**
 ReactJS 
@@ -29,13 +29,4 @@ useState
 useEffect
 useParams
 Axios
-
-
-O que funciona:
-- Página 1
-- Página 2
-
-O que não funciona: 
-- Página 3
-
 
