@@ -31,11 +31,4 @@ useParams
 Axios
 
 
-O que funciona:
-- Página 1
-- Página 2
-
-O que não funciona: 
-- Página 3
-
 
